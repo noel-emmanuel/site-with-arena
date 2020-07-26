@@ -15,7 +15,7 @@ request.onload = function() {
   for (var i = 0; i < textContent.length; i++) {
     let returnedStrings = textContent[i].content;
     let accessWebpage = document.getElementById('root');
-    console.log(accessWebpage.innerHTML = returnedStrings);
+    console.log(accessWebpage.innerHTML = "<li>" + returnedStrings + "</li>");
   }
 }
 
