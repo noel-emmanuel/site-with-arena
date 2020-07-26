@@ -11,8 +11,11 @@ request.onload = function() {
   let data = JSON.parse(this.response);
   let img = data.image.original.url;
   console.log(img);
-  const src = document.getElementById('root');
-  src.appendChild(img);
+  var a = document.createElement("img");
+  a.height = 500;
+  a.src = img;
+  console.log(a);
+  document.getElementById("photolink").appendChild(a);
 }
 
 
